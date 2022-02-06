@@ -1,0 +1,41 @@
+.content {
+  align-items: flex-start;
+  padding: 0 30px;
+  flex-wrap: nowrap;
+  max-width: calc(100% - 60px);
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+figure {
+  display: inline-block;
+}
+
+#FI_map {
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+table,
+td {
+  border: 1px solid #333;
+}
+
+td {
+  padding: 0 0.5vw;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+#PFI {
+  max-width: 20%;
+}
+#University {
+  background-color: rgb(173, 235, 255);
+}

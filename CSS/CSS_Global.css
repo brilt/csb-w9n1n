@@ -1,0 +1,153 @@
+/* ====================================== BARRE DE NAVIGATION ======================================*/
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+body {
+  margin: 0;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  z-index: 3;
+}
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: rgb(49, 49, 49);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: rgb(56, 56, 56);
+  color: white;
+}
+
+ul.topnav li a.active {
+  background-color: rgb(173, 235, 255);
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+#nav {
+  overflow: hidden;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* ==================================== END BARRE NAVIGATION ================================== */
+
+/* ======================================== HEADER ========================================== */
+
+header > div {
+  display: flex;
+  flex-direction: row;
+}
+
+#logo > img {
+  width: 17vw;
+  margin-top: 0.8vh;
+  margin-left: 0.8vw;
+}
+
+#logo {
+  width: fit-content;
+}
+
+header {
+  background-image: url("../Img/snow4.gif");
+}
+
+/* ======================================= END HEADER ====================================== */
+
+/* ========================================== BODY ========================================= */
+*,
+html,
+body {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 1.2vw;
+}
+
+h1 {
+  font-size: 2.5vw;
+}
+
+/* ====================================== END BODY ====================================== */
+
+/* ====================================== FOOTER ====================================== */
+
+.footer-basic {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  text-align: center;
+}
+
+.footer-basic ul {
+  list-style: none;
+  text-align: center;
+  font-size: 1vw;
+  line-height: 1.6;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic .social {
+  text-align: center;
+}
+
+.footer-basic .social > a {
+  font-size: 1vw;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 1vw;
+  color: white;
+  opacity: 0.75;
+}
+
+.footer-basic .copyright {
+  text-align: center;
+  margin-top: 1.1vw;
+  color: white;
+  opacity: 0.75;
+  margin: 0vw;
+}
+/* ====================================== END FOOTER ====================================== */
